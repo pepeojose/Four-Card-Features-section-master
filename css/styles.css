@@ -1,0 +1,128 @@
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --font-family: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: 15px;
+}
+
+.main-container {
+    padding: 2rem 1rem;
+}
+
+.header__title,
+.header__span {
+    font-size: 1.6rem;
+}
+
+.header__title {
+    font-weight: 200;
+    color: var(--Grayish-Blue);
+}
+
+.header__span {
+    display: block;
+    font-weight: 600;
+    color: var(--Very-Dark-Blue);
+}
+
+.header__paragraph {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.paragraph {
+    color: var(--Grayish-Blue);
+}
+
+img {
+    display: block;
+    margin-left: auto;
+}
+
+.card {
+    background-color: #fff;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px var(--Grayish-Blue);
+}
+
+.card__supervisor {
+    border-top: 3px solid var(--cyan);
+}
+
+.card__team {
+    border-top: 3px solid var(--red);
+}
+
+.card__karma {
+    border-top: 3px solid var(--orange);
+}
+
+.card__calculator {
+    border-top: 3px solid var(--blue);
+}
+
+.card__title {
+    color: var(--Very-Dark-Blue);
+}
+
+@media screen and (min-width: 768px) {
+    .header__paragraph {
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    body {
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+    }
+    .main-container {
+        width: 95%;
+        padding: 2rem 6rem;
+        box-shadow: 0 10px 30px var(--Grayish-Blue);
+    }
+    .header {
+        width: 50%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3rem;
+    }
+    .header__title {
+        margin-bottom: 0;
+    }
+    .header__span {
+        margin-top: 0;
+    }
+    .header__paragraph {
+        font-size: .9rem;
+        margin-bottom: 5rem;
+    }
+    .main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        gap: 1rem;
+        place-items: center;
+    }
+    .card__supervisor,
+    .card__calculator {
+        height: 232px;
+    }
+}
