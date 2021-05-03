@@ -95,6 +95,7 @@ img {
     }
     .main-container {
         width: 95%;
+        max-width: 1350px;
         padding: 2rem 6rem;
         box-shadow: 0 10px 30px var(--Grayish-Blue);
     }
